@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMusic Intelligence</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ========================================= -->
+    <!-- CONTENEDOR PRINCIPAL DEL SISTEMA -->
+    <!-- ========================================= -->
+
+    <div class="container">
+
+        <!-- ========================================= -->
+        <!-- MENÚ LATERAL DE NAVEGACIÓN -->
+        <!-- ========================================= -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-headphones"></i>
+
+                <div>
+
+                    <h2>KMusic AI</h2>
+
+                    <span>Music Intelligence</span>
+
+                </div>
+
+            </div>
+
+            <ul>
+
+                <li><i class="fa-solid fa-house"></i> Inicio</li>
+
+                <li><i class="fa-solid fa-magnifying-glass"></i> Buscar</li>
+
+                <li><i class="fa-solid fa-book"></i> Biblioteca</li>
+
+                <li><i class="fa-solid fa-bookmark"></i> Guardados</li>
+
+                <li><i class="fa-solid fa-heart"></i> Me Gusta</li>
+
+                <li><i class="fa-solid fa-list"></i> Playlists</li>
+
+                <li><i class="fa-solid fa-clock"></i> Historial</li>
+
+                <li><i class="fa-solid fa-brain"></i> IA WEKA</li>
+
+                <li><i class="fa-solid fa-user"></i> Perfil</li>
+
+            </ul>
+
+        </aside>
+
+        <!-- ========================================= -->
+        <!-- ÁREA PRINCIPAL -->
+        <!-- ========================================= -->
+
+        <main class="main-content">
+
+            <!-- ========================================= -->
+            <!-- BUSCADOR DE CANCIONES -->
+            <!-- ========================================= -->
+
+            <header class="topbar">
+
+                <input
+                    type="text"
+                    placeholder="Buscar canciones, artistas o géneros">
+
+                <button>
+
+                    <i class="fa-solid fa-search"></i>
+
+                    Buscar
+
+                </button>
+
+            </header>
+
+            <!-- ========================================= -->
+            <!-- PRESENTACIÓN DEL SISTEMA -->
+            <!-- ========================================= -->
+
+            <section class="hero">
+
+                <span class="badge">
+
+                    🚀 Java + WEKA 3.8 + Machine Learning
+
+                </span>
+
+                <h1>
+
+                    KMusic Intelligence
+
+                </h1>
+
+                <h2>
+
+                    Sistema Inteligente de Recomendación Musical
+
+                </h2>
+
+                <p>
+
+                    Plataforma desarrollada por Kelvin Marlon
+                    Rudas Hinostroza utilizando Java,
+                    WEKA y Machine Learning para recomendar
+                    música según los gustos del usuario.
+
+                </p>
+
+            </section>
+
+            <!-- ========================================= -->
+            <!-- ACCESOS RÁPIDOS -->
+            <!-- ========================================= -->
+
+            <section>
+
+                <h2>⚡ Acceso Rápido</h2>
+
+                <div class="songs">
+
+                    <div class="song-card">
+                        <h3>❤️ Me Gusta</h3>
+                        <p>Canciones favoritas</p>
+                    </div>
+
+                    <div class="song-card">
+                        <h3>🔖 Guardados</h3>
+                        <p>Música almacenada</p>
+                    </div>
+
+                    <div class="song-card">
+                        <h3>🎵 Playlist</h3>
+                        <p>Listas personales</p>
+                    </div>
+
+                    <div class="song-card">
+                        <h3>🔥 Tendencias</h3>
+                        <p>Lo más escuchado</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ========================================= -->
+            <!-- RECOMENDACIONES GENERADAS POR WEKA -->
+            <!-- ========================================= -->
+
+            <section>
+
+                <h2>🧠 Recomendado para Ti</h2>
+
+                <p>
+                    Estas canciones son recomendadas por el
+                    modelo WEKA J48 según tu historial.
+                </p>
+
+                <div class="songs">
+
+                    <div class="song-card">
+
+                        <img src="img/music1.jpg">
+
+                        <h3>Numb</h3>
+
+                        <p>Linkin Park</p>
+
+                        <div class="actions">
+
+                            <button>▶</button>
+
+                            <button>❤️</button>
+
+                            <button>🔖</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="song-card">
+
+                        <img src="img/music2.jpg">
+
+                        <h3>In The End</h3>
+
+                        <p>Linkin Park</p>
+
+                        <div class="actions">
+
+                            <button>▶</button>
+
+                            <button>❤️</button>
+
+                            <button>🔖</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="song-card">
+
+                        <img src="img/music3.jpg">
+
+                        <h3>Believer</h3>
+
+                        <p>Imagine Dragons</p>
+
+                        <div class="actions">
+
+                            <button>▶</button>
+
+                            <button>❤️</button>
+
+                            <button>🔖</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ========================================= -->
+            <!-- GÉNEROS MÁS ESCUCHADOS -->
+            <!-- ========================================= -->
+
+            <section>
+
+                <h2>🎼 Géneros Favoritos</h2>
+
+                <div class="songs">
+
+                    <div class="song-card">
+                        <h3>Rock</h3>
+                    </div>
+
+                    <div class="song-card">
+                        <h3>Pop</h3>
+                    </div>
+
+                    <div class="song-card">
+                        <h3>Electrónica</h3>
+                    </div>
+
+                    <div class="song-card">
+                        <h3>Salsa</h3>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ========================================= -->
+            <!-- ARTISTAS MÁS ESCUCHADOS -->
+            <!-- ========================================= -->
+
+            <section>
+
+                <h2>⭐ Artistas Favoritos</h2>
+
+                <div class="artists">
+
+                    <div class="artist">
+                        <img src="img/artist1.jpg">
+                        <p>Linkin Park</p>
+                    </div>
+
+                    <div class="artist">
+                        <img src="img/artist2.jpg">
+                        <p>Queen</p>
+                    </div>
+
+                    <div class="artist">
+                        <img src="img/artist3.jpg">
+                        <p>Imagine Dragons</p>
+                    </div>
+
+                    <div class="artist">
+                        <img src="img/artist4.jpg">
+                        <p>Taylor Swift</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ========================================= -->
+            <!-- HISTORIAL DEL USUARIO -->
+            <!-- ========================================= -->
+
+            <section class="history">
+
+                <h2>🕒 Historial de Escucha</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Canción</th>
+                        <th>Artista</th>
+                        <th>Género</th>
+                    </tr>
+
+                    <tr>
+                        <td>Numb</td>
+                        <td>Linkin Park</td>
+                        <td>Rock</td>
+                    </tr>
+
+                    <tr>
+                        <td>Believer</td>
+                        <td>Imagine Dragons</td>
+                        <td>Rock</td>
+                    </tr>
+
+                    <tr>
+                        <td>Shape Of You</td>
+                        <td>Ed Sheeran</td>
+                        <td>Pop</td>
+                    </tr>
+
+                </table>
+
+            </section>
+
+            <!-- ========================================= -->
+            <!-- PANEL DE ESTADÍSTICAS WEKA -->
+            <!-- ========================================= -->
+
+            <section class="weka-panel">
+
+                <h2>📊 Estadísticas del Modelo</h2>
+
+                <div class="stats">
+
+                    <div class="stat">
+                        <h3>Modelo</h3>
+                        <p>J48</p>
+                    </div>
+
+                    <div class="stat">
+                        <h3>Precisión</h3>
+                        <p>94%</p>
+                    </div>
+
+                    <div class="stat">
+                        <h3>Usuarios</h3>
+                        <p>1250</p>
+                    </div>
+
+                    <div class="stat">
+                        <h3>Recomendaciones</h3>
+                        <p>25</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- REPRODUCTOR MUSICAL -->
+    <!-- ========================================= -->
+
+    <footer class="player">
+
+        <div>
+
+            🎵 Numb - Linkin Park
+
+        </div>
+
+        <div>
+
+            ⏮️ ▶️ ⏭️
+
+        </div>
+
+        <div>
+
+            🔊 80%
+
+        </div>
+
+    </footer>
+
+</body>

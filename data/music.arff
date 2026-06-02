@@ -1,0 +1,9 @@
+@RELATION music
+@ATTRIBUTE genero {Rock,Pop,Salsa,Reggaeton}
+@ATTRIBUTE artista STRING
+@ATTRIBUTE recomienda {Si,No}
+@DATA
+Rock,'LinkinPark',Si
+Pop,'TaylorSwift',Si
+Salsa,'MarcAnthony',Si
+Reggaeton,'BadBunny',No

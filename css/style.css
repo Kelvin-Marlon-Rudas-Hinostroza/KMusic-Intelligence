@@ -1,0 +1,526 @@
+/* ==========================================
+   KMUSIC AI - MUSIC INTELLIGENCE
+   Kelvin Marlon Rudas Hinostroza
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:
+    linear-gradient(
+        180deg,
+        #181818 0%,
+        #121212 50%,
+        #0a0a0a 100%
+    );
+
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* ==========================================
+   CONTENEDOR
+========================================== */
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+.sidebar{
+    width:280px;
+    height:100vh;
+
+    background:
+    linear-gradient(
+        180deg,
+        #000000,
+        #111111
+    );
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    padding:25px;
+
+    border-right:1px solid #222;
+
+    box-shadow:
+    5px 0 25px rgba(0,0,0,.4);
+
+    overflow-y:auto;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:40px;
+}
+
+.logo i{
+    font-size:45px;
+    color:#1DB954;
+}
+
+.logo h2{
+    color:#1DB954;
+}
+
+.logo span{
+    color:#aaa;
+    font-size:12px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    padding:15px;
+    margin-bottom:10px;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    color:#b3b3b3;
+
+    transition:.3s;
+}
+
+.sidebar li:hover{
+    background:#1DB954;
+    color:white;
+    transform:translateX(8px);
+}
+
+.sidebar li i{
+    margin-right:10px;
+}
+
+/* ==========================================
+   CONTENIDO PRINCIPAL
+========================================== */
+
+.main-content{
+    margin-left:280px;
+    width:calc(100% - 280px);
+
+    padding:30px;
+    padding-bottom:120px;
+}
+
+/* ==========================================
+   BUSCADOR
+========================================== */
+
+.topbar{
+    display:flex;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.topbar input{
+    flex:1;
+
+    padding:18px 25px;
+
+    border:none;
+    outline:none;
+
+    border-radius:50px;
+
+    background:#1f1f1f;
+
+    color:white;
+    font-size:15px;
+}
+
+.topbar input:focus{
+    box-shadow:0 0 15px #1DB954;
+}
+
+.topbar button{
+    background:#1DB954;
+
+    border:none;
+
+    padding:15px 30px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.topbar button:hover{
+    transform:scale(1.05);
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+    background:
+    linear-gradient(
+        135deg,
+        #1DB954,
+        #18a548,
+        #121212
+    );
+
+    padding:60px;
+
+    border-radius:25px;
+
+    margin-bottom:35px;
+
+    box-shadow:
+    0 15px 40px rgba(29,185,84,.25);
+}
+
+.badge{
+    display:inline-block;
+
+    background:white;
+
+    color:black;
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+.hero h2{
+    margin-bottom:15px;
+    font-weight:400;
+}
+
+.hero p{
+    max-width:700px;
+    line-height:1.8;
+}
+
+/* ==========================================
+   TITULOS
+========================================== */
+
+section h2{
+    margin-bottom:20px;
+    margin-top:25px;
+}
+
+/* ==========================================
+   TARJETAS
+========================================== */
+
+.songs{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fill,minmax(230px,1fr));
+
+    gap:20px;
+
+    margin-bottom:40px;
+}
+
+.song-card{
+    background:#181818;
+
+    padding:15px;
+
+    border-radius:20px;
+
+    border:1px solid #222;
+
+    transition:.4s;
+}
+
+.song-card:hover{
+    background:#202020;
+
+    transform:
+    translateY(-8px);
+
+    box-shadow:
+    0 10px 30px rgba(29,185,84,.2);
+}
+
+.song-card img{
+    width:100%;
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    transition:.4s;
+}
+
+.song-card:hover img{
+    transform:scale(1.04);
+}
+
+.song-card h3{
+    margin-top:15px;
+}
+
+.song-card p{
+    color:#b3b3b3;
+    margin-top:5px;
+}
+
+/* ==========================================
+   BOTONES DE CANCIÓN
+========================================== */
+
+.actions{
+    display:flex;
+    justify-content:space-between;
+    margin-top:15px;
+}
+
+.actions button{
+    width:45px;
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    background:#1DB954;
+
+    font-size:18px;
+
+    transition:.3s;
+}
+
+.actions button:hover{
+    transform:scale(1.15);
+}
+
+/* ==========================================
+   ARTISTAS
+========================================== */
+
+.artists{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-bottom:40px;
+}
+
+.artist{
+    text-align:center;
+}
+
+.artist img{
+    width:150px;
+    height:150px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:4px solid #1DB954;
+
+    transition:.4s;
+}
+
+.artist:hover img{
+    transform:scale(1.08);
+}
+
+.artist p{
+    margin-top:10px;
+}
+
+/* ==========================================
+   HISTORIAL
+========================================== */
+
+.history table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:40px;
+}
+
+.history th{
+    background:#1DB954;
+    color:white;
+}
+
+.history th,
+.history td{
+    padding:15px;
+    border:1px solid #333;
+    text-align:left;
+}
+
+.history tr:nth-child(even){
+    background:#181818;
+}
+
+/* ==========================================
+   PANEL WEKA
+========================================== */
+
+.weka-panel{
+    background:
+    linear-gradient(
+        135deg,
+        #181818,
+        #242424
+    );
+
+    padding:30px;
+
+    border-radius:25px;
+}
+
+.stats{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:20px;
+}
+
+.stat{
+    background:#1f1f1f;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    transition:.3s;
+}
+
+.stat:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 10px 30px rgba(29,185,84,.2);
+}
+
+.stat h3{
+    color:#1DB954;
+    margin-bottom:10px;
+}
+
+.stat p{
+    font-size:2rem;
+    font-weight:bold;
+}
+
+/* ==========================================
+   REPRODUCTOR
+========================================== */
+
+.player{
+    position:fixed;
+
+    bottom:0;
+    left:0;
+
+    width:100%;
+
+    background:#111;
+
+    border-top:1px solid #333;
+
+    padding:18px 30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    z-index:999;
+}
+
+/* ==========================================
+   SCROLL
+========================================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#1DB954;
+    border-radius:10px;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:900px){
+
+    .sidebar{
+        position:relative;
+        width:100%;
+        height:auto;
+    }
+
+    .main-content{
+        width:100%;
+        margin-left:0;
+    }
+
+    .container{
+        flex-direction:column;
+    }
+
+    .hero{
+        padding:30px;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .topbar{
+        flex-direction:column;
+    }
+
+    .player{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+}
